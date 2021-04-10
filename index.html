@@ -176,13 +176,11 @@
 <p>在这篇博文里我将记录hexo的<strong>基本使用步骤</strong>，以及遇到的一些<strong>问题</strong>和<strong>解决方案</strong>，希望能帮助小伙伴们尽快入门hexo，有问题的地方也欢迎各位交流指正</p>
 <hr>
 <h2 id="新建博客"><a href="#新建博客" class="headerlink" title="新建博客"></a>新建博客</h2><h3 id="方法步骤"><a href="#方法步骤" class="headerlink" title="方法步骤"></a>方法步骤</h3><ol>
-<li><p>在我们blog文件夹或其子文件夹下的任意位置右键<code>Git Bash Here</code></p>
-</li>
-<li><p>输入<code> hexo n 这是一篇新博客</code>  即：<code>hexo new 博客名</code> ,其中 <code>n</code> 可以用其全写 <code>new</code>代替 </p>
-<p> <img src="/2021/04/09/Hexo%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97-1/images/Hexo%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97-1/1617935418893.png" alt="图1"></p>
-<p>默认存储在<code>source/_posts</code>文件下</p>
-</li>
+<li>在我们blog文件夹或其子文件夹下的任意位置右键<code>Git Bash Here</code></li>
+<li>输入<code> hexo n 这是一篇新博客</code>  即：<code>hexo new 博客名</code> ,其中 <code>n</code> 可以用其全写 <code>new</code>代替 </li>
 </ol>
+<p><img src="/2021/04/09/Hexo%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97-1/1618024083433.png" alt="1618024083433"></p>
+<p>默认存储在<code>source/_posts</code>文件下</p>
 <h3 id="布局类型"><a href="#布局类型" class="headerlink" title="布局类型"></a>布局类型</h3><p>除了<code>post（文章）</code>的类型，还有另外两种类型<code>draft（草稿）</code>和<code>page（页面）</code></p>
 <ul>
 <li><p>post类型是新建博文的默认类型，可以通过修改_config.yml中的default_layout的参数进行修改</p>
@@ -191,7 +189,7 @@
 <blockquote>
 <p>hexo n draft 这是一篇草稿博文</p>
 </blockquote>
-<p><img src="/2021/04/09/Hexo%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97-1/images/Hexo%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97-1/1617936028170.png"></p>
+<p><img src="/2021/04/09/Hexo%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97-1/1618024149096.png" alt="1618024149096"></p>
 <p>原本<code>_draft</code>文件夹不存在，第一次创建草稿系统会自动创建此文件夹，但此博客不会显示在页面上，如果我们不想某一篇文章显示在页面上，那么就可以把它移动到<code>_drafts</code>文件夹中。</p>
 <p>当我们想让草稿成为正式的博文，可以通过以下两种方法：</p>
 <ol>
@@ -204,6 +202,11 @@
 <p>《这是一篇新博文》将被移动到<code>_posts</code>中</p>
 </li>
 </ol>
+<p>如果希望本地查看草稿博文，使用命令：</p>
+<blockquote>
+<p>hexo s –drafts</p>
+</blockquote>
+<p>再登录 <a href="http://localhost:4000即可查看">http://localhost:4000即可查看</a></p>
 </li>
 </ul>
 <h2 id="上传博客"><a href="#上传博客" class="headerlink" title="上传博客"></a>上传博客</h2><p>我们写完博文以后要将博文部署到远端也就是github上，这个过程也很简单，只需要按照下列步骤进行。</p>
@@ -223,7 +226,6 @@
 </li>
 </ol>
 <p><strong>总结</strong>：最少其实只需要两步<code>hexo g</code> 和 <code>hexo d</code></p>
-<p><img src="/2021/04/09/Hexo%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97-1/images/Hexo%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97-1/1617950943055.png" alt="1617950943055"></p>
 
       
 
